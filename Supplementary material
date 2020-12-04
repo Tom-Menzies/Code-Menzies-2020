@@ -1,0 +1,223 @@
+% sage_latex_guidelines.tex V1.20, 14 January 2017
+
+%\documentclass[12pt,shortAfour,sagev,times,doublespace]{sagej}
+\documentclass[12pt,  sagev,times]{sagej}
+\usepackage{geometry} \geometry{ a4paper, total={180mm,240mm}, left=15mm, right=15mm}
+\usepackage{moreverb,url}
+\usepackage{ dsfont }
+\usepackage[colorlinks,bookmarksopen,bookmarksnumbered,citecolor=red,urlcolor=red]{hyperref}
+\usepackage{xcolor}
+
+\newcommand\BibTeX{{\rmfamily B\kern-.05em \textsc{i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\def\volumeyear{2016}
+\newcommand{\mozg}[1]{\textcolor{red}{#1}}
+\newcommand{\gsh}[1]{\textcolor{blue}{#1}}
+\newcommand{\tom}[1]{\textcolor{orange}{#1}}
+\usepackage{multirow}
+\usepackage{soul}
+
+\setcounter{secnumdepth}{3}
+\begin{document}
+
+\runninghead{Menzies, Saint-Hilary and Mozgunov}
+
+\title{Supplemental Material - A Comparison of Various Aggregation Functions in Multi-Criteria Decision Analysis for Drug Benefit-Risk Assessment}
+
+\author{Tom Menzies\affilnum{1,2}, Gaelle Saint-Hilary\affilnum{3,4} and Pavel Mozgunov\affilnum{5}}
+
+\affiliation{\affilnum{1}Clinical Trials Research Unit, Leeds Institute of Clinical Trials Research, University of Leeds, Leeds, UK \\
+\affilnum{2}Department of Mathematics and Statistics, Lancaster University, Lancaster, UK  \\
+\affilnum{3}Department of Biostatistics, Institut de Recherches Internationales Servier (IRIS), Suresnes, France\\
+\affilnum{4}Dipartimento di Scienze Matematiche (DISMA) Giuseppe Luigi Lagrange, Politecnico di Torino, Torino, Italy\\
+\affilnum{5} Medical and Pharmaceutical Statistics Research Unit, Department of Mathematics and Statistics, Lancaster University, Lancaster, UK }
+
+\corrauth{Tom Menzies, Clinical Trials Research Unit,
+University of Leeds,
+Leeds,
+LS2 9JT, UK.}
+\email{t.menzies@leeds.ac.uk}
+
+
+
+\maketitle
+
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
+
+\setcounter{table}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+
+
+\clearpage
+
+
+
+\section{Additional simulation results}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=17cm]{FigureS1.png}
+\end{center}
+\vspace{-2em}
+\caption{Results of the six pairwise comparisons of the four AM, for scenarios 8 and 9}
+\label{fig:sim3}
+\end{figure}
+
+
+\begin{table}[h]
+\begin{center}
+\noindent\makebox[\textwidth]{
+\begin{tabular}{|cc|cccc|}
+\hline
+    & &Linear Model & Product Model & Multi-Linear Model & Product Model \\
+\hline
+Scenario 1    &     \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}24/81 \\ 12/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}18/81 \\ 8/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}25/81 \\ 9/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}18/81 \\ 5/81\end{tabular} \\
+\hline                
+Scenario 2    &     \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}13/81 \\ 3/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}18/81 \\ 1/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}16/81 \\ 3/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}16/81 \\ 1/81\end{tabular} \\
+\hline
+Scenario 3    &     \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}19/81 \\ 2/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}13/81 \\ 2/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}19/81 \\ 2/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}13/81 \\ 0/81\end{tabular} \\
+\hline
+Scenario 4    &     \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}11/81 \\ 2/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}0/81  \\ 0/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}9/81  \\ 2/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}0/81  \\ 0/81\end{tabular} \\
+\hline
+Scenario 5    &     \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}13/81 \\ 2/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}3/81  \\ 0/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}14/81 \\ 0/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}0/81  \\ 0/81\end{tabular} \\
+\hline
+Scenario 6    &     \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}20/81 \\ 3/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}13/81 \\ 0/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}17/81 \\ 3/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}8/81  \\ 0/81\end{tabular} \\
+\hline
+Scenario 7    &     \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}22/81 \\ 3/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}14/81 \\ 2/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}23/81 \\ 3/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}11/81 \\ 0/81\end{tabular} \\
+\hline
+Scenario 8    &     \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}1/81 \\ 1/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}2/81 \\ 1/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}1/81 \\ 1/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}3/81 \\ 1/81\end{tabular} \\
+\hline
+Scenario 9    &     \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}3/81 \\ 1/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}3/81 \\ 1/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}3/81 \\ 1/81\end{tabular} 
+                & \begin{tabular}{@{}c@{}}3/81 \\ 1/81\end{tabular} \\
+
+\hline
+Total&   \begin{tabular}{@{}c@{}}$\geq$2.5$\%$ \\ $\geq$5$\%$\end{tabular} 
+                & \begin{tabular}{@{}c@{}}126/729 \\ 29/729\end{tabular} 
+                & \begin{tabular}{@{}c@{}}84/729  \\ 15/729\end{tabular} 
+                & \begin{tabular}{@{}c@{}}127/729 \\ 24/729\end{tabular} 
+                & \begin{tabular}{@{}c@{}}72/729  \\ 8/729\end{tabular}  \\
+\hline
+\end{tabular}
+}\caption{Number of times when the difference in recommending $T_{1}$ changes by at least 2.5$\%$ or 5$\%$  between the negatively correlated criteria and the non-correlated criteria}
+\vspace{-2em}
+\label{fig:ncorr}
+\end{center}
+\end{table}
+
+
+\newpage
+\section{Weight derivations}
+
+\subsubsection*{Product Model}
+Firstly, note that under the product model, the resultant utility score for the two criteria example is given by:
+\begin{equation*}
+z^{P}= u^{P}(\theta_{i1},\theta_{i2}.w^{P})  =  u_{1}(\theta_{i1})^{w^{p}} \times u_{2}(\theta_{i2})^{1-w^{p}}
+\label{eq:LP1}
+\end{equation*}
+This is then used to find the equation of the contour lines:
+\begin{equation*}
+1-u_{2}(\theta_{i2})= 1- \Bigg( \frac{z^{P}}{u_{1}(\theta_{i1})^{w^{p}}} \Bigg)^{\frac{1}{1-w^{P}}} \text{ ~for }u_{1}(\theta_{i1})^{w^{p}} > (z^{P})^{-w^{P}}
+\label{eq:LP2}
+\end{equation*}
+The slope of the tangent of the contour at a given $u_{1}(\theta_{i1})$ for the utility score $z^{P}$  is:
+\begin{equation*}
+\frac{w^{P}}{1-w^{P}} \Bigg( \frac{1}{u_{1}(\theta_{i1})} \Bigg) \Bigg( \frac{z^{P}}{u_{1}(\theta_{i1})^{w^{p}}} \Bigg)^{\frac{1}{1-w^{P}}} 
+\label{eq:LP3}
+\end{equation*}
+Now, the two equations of the slopes for the product and the linear models are set equal to each other at the point $u_{i,1}$=$u_{i,2}$=0.5. This gives the equality:
+\begin{equation*}
+\frac{w^{P}}{1-w^{P}}= \frac{w^{L}}{1-w^{L}}.
+\label{LP4}
+\end{equation*}
+
+
+Which further simplifies down to $w^{P}$ =$w^{L}$ , showing that the weight used in the linear model is also the weight used in the product model.
+
+\subsubsection*{Multi-Linear Model}
+
+Firstly, note that under the multi-linear model, the resultant utility score for the two criteria example is given by:
+\begin{equation*}
+z^{ML}(\theta_{i1},\theta_{i2},w_{1}^{{ML}},w_{2}^{{ML}}):= w_{1}^{{ML}}u_1(\theta_{i1}) + (w_{2}^{{ML}})u_2(\theta_{i2}) + (1-w_{1}^{{ML}}-w_{2}^{{ML}})( u_1(\theta_{i1})u_2(\theta_{i2})).
+\label{eq:LM1}
+\end{equation*}
+This is then used to find the equation of the contour lines:
+\begin{equation*}
+1-u_{2}(\theta_{i2})= 1- \frac{z^{ML}-w_{1}^{{ML}}u_1(\theta_{i1})}{w_{2}^{{ML}} + u_1(\theta_{i1}) - w_{1}^{{ML}}u_1(\theta_{i1}) - w_{2}^{{ML}}u_1(\theta_{i1}) }
+\label{eq:LM2_1}
+\end{equation*}
+The slope of the tangent of the contour at a given $u_{1}(\theta_{i1})$ for the utility score $z^{S}$  is:
+\begin{equation*}
+\begin{array}{ccc}
+\frac{w^{{L}}}{1-w^{{L}}} & = & \frac{w_{1}^{ML}w_{2}^{ML}+z^{ML}-z^{ML}(w_{1}^{ML}+w_{2}^{ML})}{\big{(}w_{2}^{ML}-(u_{1}(\theta_{i,1}))(-1+w_{1}^{ML}+w_{2}^{ML})\big{)}^2}
+\end{array}
+\label{eq:LM3_1}
+\end{equation*}
+Now, we firstly set a constraint $1-w_{1}^{ML}-w_{2}^{ML}=c$ (where $c$ is the total weight given to the interaction terms). We then set the two equations of the slopes for the multi-linear and the linear models so they are equal to each other at the point $u_{i,1}$=$u_{i,2}$=0.5. This gives the equality:
+\begin{equation*}
+{w^{ML}} = w^{L} - \frac{c}{2}.
+\label{LM4_1}
+\end{equation*}
+
+
+
+\subsubsection*{SLoS Model}
+Firstly, note that under the SLoS Model, the resultant loss score for the two criteria example is given by:
+\begin{equation*}
+z^{S} =\Bigg( \frac{1}{u_{1}(\theta_{i1})} \Bigg)^{w^{S}}  + \Bigg( \frac{1}{u_{2}(\theta_{i2})} \Bigg)^{1-w^{S}} 
+\label{eq:LS1}
+\end{equation*}
+This is then used to find the equation of the contour lines:
+\begin{equation*}
+1-u_{2}(\theta_{i2})= 1- (z^{S}-u_{1}(\theta_{i1})^{-w^{S}})^{-\frac{1}{1-w^{S}}} \text{ ~for }u_{1}(\theta_{i1}) > z^{-\frac{1}{z^{S}}}
+\label{eq:LM2_2}
+\end{equation*}
+The slope of the tangent of the contour at a given $u_{1}(\theta_{i1})$ for the utility score $z^{S}$  is:
+\begin{equation*}
+\frac{w^{S}}{1-w^{S}} \bigg( z^{S}-u_{1}(\theta_{i1})^{-w^{S}} \bigg)^{\frac{w^{s}-2}{1-w^{S}}} \bigg( u_{1}(\theta_{i1})^{-(w^{S}+1)} \bigg) 
+\label{eq:LM3_2}
+\end{equation*}
+Now, the two equations of the slopes for the SLoS and the linear models are set equal to each other at the point $u_{i,1}$=$u_{i,2}$=0.5. This gives the equality:
+\begin{equation*}
+\frac{w^{S}}{1-w^{S}} \bigg(2^{2w^{s}-1} \bigg)= \frac{w^{L}}{1-w^{L}}.
+\label{LM4_2}
+\end{equation*}
+
+
+
+\end{document}
